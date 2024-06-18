@@ -52,7 +52,7 @@ const Header = ({ hclass = '', topbarNone = false }) => {
                       <a onClick={ClickHandler} href="#book">Nossas fotos</a>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link onClick={handleClickShop} to="/ecommerce">Lista de presentes</Link>
+                      <Link onClick={handleClickShop} to="https://tuaneeduan.com.br/ecommerce">Lista de presentes</Link>
                     </li>
                     <li><a onClick={ClickHandler} href='#contact'>Contato</a></li>
                   </ul>
