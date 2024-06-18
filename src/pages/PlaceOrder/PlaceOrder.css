@@ -179,6 +179,8 @@
 
     .place-order-left .title-text-2 {
       font-size: 18px;
+      margin-bottom: 0;
+      line-height: inherit;
     }
 
     .place-order-left .img-code {

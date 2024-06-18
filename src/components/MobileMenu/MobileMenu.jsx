@@ -1,15 +1,15 @@
 import { Fragment, useState } from 'react';
-import List from "@mui/material/List";
+/*import List from "@mui/material/List";*/
 import ListItem from "@mui/material/ListItem";
-import Collapse from "@mui/material/Collapse";
-import { Link } from "react-router-dom";
+/*import Collapse from "@mui/material/Collapse";*/
+/*import { Link } from "react-router-dom";*/
 import './MobileMenu.css';
 
 const menus = [
   {
     id: 1,
     title: 'Home',
-    link: '/home',
+    link: '/',
     submenu: [
       {
         id: 11,
@@ -307,7 +307,7 @@ const menus = [
   {
     id: 88,
     title: 'Contact',
-    link: '/contact',
+    link: '#contact',
   }
 
 
@@ -319,9 +319,9 @@ const MobileMenu = () => {
   const [openId, setOpenId] = useState(0);
   const [menuActive, setMenuState] = useState(false);
 
-  const ClickHandler = () => {
+  /*const ClickHandler = () => {
     window.scrollTo(10, 0);
-  }
+  }*/
 
   return (
     <div>
@@ -339,7 +339,7 @@ const MobileMenu = () => {
                     <p onClick={() => setOpenId(item.id === openId ? 0 : item.id)}>{item.title}
                       <i className={item.id === openId ? 'fa fa-angle-up' : 'fa fa-angle-down'}></i>
                     </p>
-                    <Collapse in={item.id === openId} timeout="auto" unmountOnExit>
+                    {/*<Collapse in={item.id === openId} timeout="auto" unmountOnExit>
                       <List className="subMenu">
                         <Fragment>
                           {item.submenu.map((submenu, i) => {
@@ -352,10 +352,10 @@ const MobileMenu = () => {
                           })}
                         </Fragment>
                       </List>
-                    </Collapse>
+                    </Collapse>*/}
                   </Fragment>
-                  : <Link
-                    to={item.link}>{item.title}</Link>
+                  : <a
+                    href={item.link}>{item.title}</a>
                 }
               </ListItem>
             )

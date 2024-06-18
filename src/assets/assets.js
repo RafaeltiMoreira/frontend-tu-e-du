@@ -16,46 +16,6 @@ import cat_6 from './cat_6.png'
 import cat_7 from './cat_7.png'
 import cat_8 from './cat_8.png'
 
-//import gifts_1 from 'https://utfs.io/f/166519ce-c6cf-47be-9615-0f7199b81d96-82b8qa.png'
-//import gifts_2 from 'https://utfs.io/f/849a5206-8aca-487d-842c-bf7d3eaf3c9c-hvtog7.png'
-//import gifts_3 from 'https://utfs.io/f/00ec4d4d-1b51-4156-a8aa-54b13a8d3ca8-xyw41w.png'
-//import gifts_4 from 'https://utfs.io/f/cff60d73-1a1e-4c5a-ad75-c8d9f370b434-xz1dwp.png'
-
-//import gifts_5 from 'https://utfs.io/f/3b1d9882-f866-45d0-b23e-037f28bc53b0-qprdmk.png'
-//import gifts_6 from 'https://utfs.io/f/c191adf7-67db-4c8e-a987-462c1d809bac-s4jp3n.png'
-//import gifts_7 from 'https://utfs.io/f/4c3a5e0d-7807-4755-8e76-b197ec23e652-twvrrw.png'
-//import gifts_8 from 'https://utfs.io/f/d132a848-bac1-4cee-8a2b-fdb345def177-fj8wqy.png'
-
-//import gifts_9 from 'https://utfs.io/f/28d43724-2c90-4be4-8a73-35643fd704a3-hvw346.png'
-//import gifts_10 from 'https://utfs.io/f/9afe14f6-17e6-4906-8108-801ed28fc6e9-82vw9m.png'
-//import gifts_11 from 'https://utfs.io/f/79042d09-020b-4a7b-9234-f51595a45c3b-8ln035.png'
-//import gifts_12 from 'https://utfs.io/f/1655916a-69a7-4564-8d36-16a82ea1f20f-miofi0.png'
-
-//import gifts_13 from 'https://utfs.io/f/045b8e7b-902c-48eb-863c-d4404c9d1790-vy2oi8.png'
-//import gifts_14 from 'https://utfs.io/f/8cffc892-bfda-46eb-b21f-2f797516b580-8p3nkm.png'
-//import gifts_15 from 'https://utfs.io/f/42699983-a928-4341-89cf-cdfaec0d6d1c-yqel.png'
-//import gifts_16 from 'https://utfs.io/f/d2f71595-65fa-47c8-9f62-7668e3466ae8-yqes.png'
-
-//import gifts_17 from 'https://utfs.io/f/e85d4172-24fd-40e8-a2b3-f66f5de1e04c-2v6.png'
-//import gifts_18 from 'https://utfs.io/f/9b701e38-d8ce-4d2e-915f-c0892af829f3-ni4tle.png'
-//import gifts_19 from 'https://utfs.io/f/5dafb0eb-d234-41d7-99e9-f26f289c4feb-3yxbwm.png'
-//import gifts_20 from 'https://utfs.io/f/d7084a6e-41f9-4a55-9cc9-575485a9b851-cfontc.png'
-
-//import gifts_21 from 'https://utfs.io/f/70df8a4c-9252-4de1-bcb1-566322680e0c-l3lt0.png'
-//import gifts_22 from 'https://utfs.io/f/7a4014b8-a79e-483d-875d-178c06ee3bbb-gko8on.png'
-//import gifts_23 from 'https://utfs.io/f/c885af2b-7611-42b0-bd53-221db0a55b7d-8aek0l.png'
-//import gifts_24 from 'https://utfs.io/f/beefb1ae-408f-401a-a4ee-f20e03c9c849-158hpp.png'
-
-//import gifts_25 from 'https://utfs.io/f/e0374712-010c-44eb-af15-33b41fc24f9c-19f.png'
-//import gifts_26 from 'https://utfs.io/f/04253c54-a670-49ef-986e-1fd544231ffc-19d.png'
-//import gifts_27 from 'https://utfs.io/f/04717ee6-f49e-463f-8d9a-06d353030e33-19e.png'
-//import gifts_28 from 'https://utfs.io/f/adcc1c38-06f5-47c4-be65-c8954046ac01-19c.png'
-
-//import gifts_29 from 'https://utfs.io/f/3509adc2-a35f-4a78-89c3-d827ae494f3b-nki6tq.png'
-//import gifts_30 from 'https://utfs.io/f/ac0e206e-8431-48eb-82f0-c7ea0823c3f0-nki4py.png'
-//import gifts_31 from 'https://utfs.io/f/8088c7de-79d3-4841-944b-6f16bb878e09-kck2hy.png'
-//import gifts_32 from 'https://utfs.io/f/afaec203-f61e-49ba-9bfd-5152785faa06-kcjfif.png'
-
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
