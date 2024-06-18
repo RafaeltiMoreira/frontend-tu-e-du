@@ -8,7 +8,7 @@ import './MobileMenu.css';
 const menus = [
   {
     id: 1,
-    title: 'Home',
+    title: 'Início',
     link: '#home',
     /*submenu: [
       {
@@ -60,9 +60,9 @@ const menus = [
   },
   {
     id: 11,
-    title: 'Event Planner Homes',
-    link: '/home',
-    submenu: [
+    title: 'Nossa história',
+    link: '#story',
+    /*submenu: [
       {
         id: 111,
         title: 'Wedding Planner 1',
@@ -78,13 +78,13 @@ const menus = [
         title: 'Wedding Planner 3',
         link: '/home-9'
       }
-    ]
+    ]*/
   },
   {
     id: 21,
-    title: 'Wedding Shop Homes',
-    link: '/shop-home',
-    submenu: [
+    title: 'Nossas fotos',
+    link: '#book',
+    /*submenu: [
       {
         id: 211,
         title: 'Bridal Shop',
@@ -105,14 +105,14 @@ const menus = [
         title: 'Wedding Cake Shop',
         link: '/shop-home-3'
       }
-    ]
+    ]*/
   },
 
   {
     id: 2,
-    title: 'Pages',
-    link: '/',
-    submenu: [
+    title: 'Lista de presentes',
+    link: 'https://tuaneeduan.com.br/ecommerce',
+    /*submenu: [
       {
         id: 21,
         title: 'About',
@@ -198,13 +198,13 @@ const menus = [
         title: 'Register',
         link: '/register'
       },
-    ]
+    ]*/
   },
   {
     id: 4,
     title: 'Portfolio',
     link: '/portfolio-grid',
-    submenu: [
+    /*submenu: [
       {
         id: 41,
         title: 'Portfolio Grid',
@@ -230,14 +230,14 @@ const menus = [
         title: 'Portfolio Single',
         link: '/project-single/James-Amelia'
       }
-    ]
+    ]*/
   },
 
   {
     id: 7,
     title: 'Shop',
     link: '/shop',
-    submenu: [
+    /*submenu: [
       {
         id: 71,
         title: 'Shop',
@@ -264,14 +264,14 @@ const menus = [
         link: '/checkout'
       }
 
-    ]
+    ]*/
   },
 
   {
     id: 5,
     title: 'Blog',
     link: '/blog',
-    submenu: [
+    /*submenu: [
       {
         id: 51,
         title: 'Blog',
@@ -302,7 +302,7 @@ const menus = [
         title: 'Blog single Left sidebar',
         link: '/blog-single-fullwidth/Top-10-wedding'
       },
-    ]
+    ]*/
   },
   {
     id: 88,

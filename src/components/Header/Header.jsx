@@ -40,7 +40,7 @@ const Header = ({ hclass = '', topbarNone = false }) => {
                   <button className="menu-close"><i className="ti-close"></i></button>
                   <ul className="nav navbar-nav mb-2 mb-lg-0">
                     <li className="menu-item-has-children">
-                      <a href='#home'>Home</a>
+                      <a href='#home'>Início</a>
                     </li>
                     <li className="menu-item-has-children">
                       <a onClick={ClickHandler} href="#couple">Os Noivos</a>
@@ -52,7 +52,7 @@ const Header = ({ hclass = '', topbarNone = false }) => {
                       <a onClick={ClickHandler} href="#book">Nossas fotos</a>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link onClick={handleClickShop} to="/ecommerce">Lista de presentes</Link>
+                      <Link onClick={handleClickShop} to="https://tuaneeduan.com.br/ecommerce">Lista de presentes</Link>
                     </li>
                     <li><a onClick={ClickHandler} href='#contact'>Contato</a></li>
                   </ul>
