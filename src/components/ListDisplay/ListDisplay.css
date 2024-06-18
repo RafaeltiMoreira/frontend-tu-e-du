@@ -1,0 +1,31 @@
+.list-display {
+    margin-top: 30px;
+}
+
+.list-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    color: #425335;
+    margin-bottom: 20px;
+    font-family: "Lexend", sans-serif;
+}
+
+.list-display .text-p {
+    color: #425335;
+    font-size: 1.5vw;
+    margin-bottom: 80px;
+}
+
+.list-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+@media (max-width: 1050px) {
+    .list-display .text-p {
+        font-size: 15px;
+    }
+}

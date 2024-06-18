@@ -1,0 +1,198 @@
+/* Estilos originais da barra de navegação */
+
+.navbar-shop{
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-shop .logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #425335;
+  font-size: 18px;
+  align-items: baseline;
+}
+
+.navbar-menu a:hover {
+  color: #425335 !important;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-shop .btn-link {
+  background-color: transparent;
+  font-size: 18px;
+  color: #C59A27;
+  font-weight: bold;
+  border: 1px solid #C59A27;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar-shop .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #425335;
+}
+
+.navbar-shop li {
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: #C59A27;
+  border-radius: 50%;
+  top: -12px;
+  right: -12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 8px;
+}
+
+.navbar-search-icon .dot {
+  font-size: 14px !important;
+  color: #425335;
+  font-weight: 600;
+}
+
+.nav-mob-open {
+  display: none;
+}
+
+.nav-mob-close {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .navbar-shop {
+    position: inherit !important;
+  }
+
+  .navbar-shop .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+
+  .navbar-right img {
+    width: 22px;
+  }
+
+  .navbar-right button {
+    padding: 8px 25px;
+  }
+
+  .navbar-shop .btn-link {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-shop .logo {
+    width: 110px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar-right button {
+    padding: 7px 20px;
+    font-size: 15px;
+  }
+
+  .navbar-shop .btn-link {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-search-icon .dot {
+    font-size: 13px;
+  }
+
+  .navbar-search-icon img {
+    width: 28px !important;
+  }
+
+  .navbar-shop .btn-link {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: white;
+  }
+
+  .navbar-shop {
+    margin: 20px 60px 0 0;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    gap: 30px;
+    background-color: #d8c48e;
+    /*background-color: #00000015;*/
+    width: 320px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -320px;
+    padding-top: 50px;
+  }
+
+  .nav-mob-open {
+    display: block;
+    position: absolute;
+    width: 26px;
+    right: 30px;
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 100px;
+    width: 26px;
+  }
+}

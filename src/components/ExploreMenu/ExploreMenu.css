@@ -1,0 +1,76 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-menu h2 {
+    color: #425335;
+    font-weight: 600;
+    font-size: max(2vw, 24px);
+    font-family: "Lexend", sans-serif;
+}
+
+.explore-menu-text {
+    max-width: 80%;
+    color: #425335;
+    font-size: 1.5vw;
+}
+
+.explore-menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+   /*margin: 20px 0 150px;*/
+    margin: 20px 0 80px;
+    /*margin: 20px 0;*/
+    overflow-x: scroll;
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+.explore-menu-list-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.explore-menu-list-item p {
+    margin-top: 10px;
+    color: #C59A27;
+    font-size: max(1vw, 16px);
+    cursor: pointer;
+}
+
+.explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.explore-menu-list-item .active {
+    border: 4px solid #C59A27;
+    padding: 2px;
+}
+
+@media (max-width: 1050px) {
+    .explore-menu-list-item p {
+        font-size: max(1vw, 12px);
+    }
+
+    .explore-menu-list {
+        margin: 20px 0;
+    }
+
+    .explore-menu-text {
+        max-width: 100%;
+        font-size: 15px;
+    }
+}

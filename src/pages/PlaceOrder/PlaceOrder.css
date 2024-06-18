@@ -1,0 +1,221 @@
+  .place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+  }
+
+  .place-order-left {
+    width: 100%;
+    width: max(20vw, 240px);
+
+    position: relative;
+
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #425335;
+    margin-bottom: 30px;
+  }
+
+  .place-order-left .title-text-1 {
+    padding: 10px;
+    font-size: 16px;
+    color: #425335;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .place-order-left .title-text-2 {
+    padding: 10px;
+    color: #425335;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .place-order-right h2 {
+    color: #425335 !important;
+    font-family: "Lexend", sans-serif !important;
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+  }
+
+  .title p {
+    color: #425335;
+  }
+
+  .place-order-left .align-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btnCopiar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .infos-code {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    /*align-items: center;
+    gap: 15px;*/
+    color: #425335;
+    font-size: 16px;
+  }
+
+  .place-order-left .img-code {
+    position: relative;
+    display: flex;
+
+    width: max(20vw, 220px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .place-order-left .img-qrcode {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+  }
+
+  .img-code .btnCopiar {
+    position: absolute;
+    padding: 10px;
+    width: max(16vw, 200px);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #C59A27;
+    border: 1px solid #C59A27;
+    background-color: white;
+    z-index: 1;
+    top: 100%;
+  }
+
+  .img-code input {
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+  }
+
+  .place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+  }
+
+  .place-order-right .cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: max(25vw, 200px);
+    color: #425335;
+  }
+
+  .place-order-right .title-text-2 {
+    padding: 10px;
+    color: #425335;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .place-order-right .cart-total-details {
+    display: flex;
+    justify-content: space-between;
+    color: #425335;
+  }
+
+  .place-order-right .cart-total hr {
+    margin: 10px 0;
+  }
+
+  .place-order-right .cart-total button {
+    border: none;
+    color: white;
+    background-color: #C59A27;
+    width: max(25vw, 200px);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1068px) {
+    .img-code .btnCopiar {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    .place-order {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-top: 30px;
+      gap: 30px;
+      row-gap: 50px;
+    }
+
+    .place-order-left .title-text-1 {
+      font-size: 17px;
+    }
+
+    .place-order-left .title-text-2 {
+      font-size: 18px;
+    }
+
+    .place-order-left .img-code {
+      left: 10px;
+    }
+
+    .place-order .img-code {
+      right: 30px;
+    }
+
+    .multi-fields summary {
+      width: max(20vw, 240px);
+      font-size: 16px;
+    }
+
+    .img-code .btnCopiar {
+      font-size: 14px;
+    }
+
+    .place-order-right {
+      margin-top: 50px;
+      max-width: max(32%, 200px);
+    }
+
+    .place-order-right .cart-total button {
+      font-size: 13px;
+    }
+
+    .cart-total-details {
+      font-size: 17px !important;
+      color: #425335 !important;
+    }
+
+    .infos-code p {
+      color: #425335 !important;
+      font-size: 16px !important;
+      line-height: inherit !important;
+      margin-bottom: inherit !important;
+    }
+  }
