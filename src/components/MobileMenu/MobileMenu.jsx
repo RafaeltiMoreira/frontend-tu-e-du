@@ -9,8 +9,8 @@ const menus = [
   {
     id: 1,
     title: 'Home',
-    link: '/',
-    submenu: [
+    link: '#home',
+    /*submenu: [
       {
         id: 11,
         title: 'Wedding Home 1',
@@ -56,7 +56,7 @@ const menus = [
         title: 'Wedding Invitation 2',
         link: '/invitation-2'
       },
-    ]
+    ]*/
   },
   {
     id: 11,
