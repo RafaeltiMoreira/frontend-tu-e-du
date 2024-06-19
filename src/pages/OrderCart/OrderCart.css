@@ -148,7 +148,11 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+  }
 
+  .cart-total-cart button {
+    width: max(17vw, 220px);
+    font-size: 14px;
   }
 }
 
@@ -156,6 +160,7 @@
   .list-item-price-cart {
     font-size: 16px;
   }
+
 }
 
 @media (max-width: 1050px) {
@@ -181,4 +186,5 @@
     color: #425335;
     font-size: 1.5em;
   }
+
 }

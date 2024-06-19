@@ -10,25 +10,25 @@ const Events = [
     {
         Simg: sImg1,
         title: 'A Cerimônia',
-        li1: 'Monday, 12 Apr. 2023 1:00 PM – 2:30 PM',
-        li2: '4517 Washington Ave. Manchester, Kentucky 39495',
-        li3: '+1 234-567-8910',
+        li1: 'Sábado, 14 de setembro de 2024, às 16:00 PM',
+        li2: 'SMLN MI Trecho 09 NR Córrego TAM, CH Panorama CH 06',
+        li3: 'Espaço Panorama Brasília, Lago Norte, Brasília - DF',
         animation: '1200',
     },
     {
         Simg: sImg2,
         title: 'A Recepção',
-        li1: 'Monday, 12 Apr. 2023 1:00 PM – 2:30 PM',
-        li2: '4517 Washington Ave. Manchester, Kentucky 39495',
-        li3: '+1 234-567-8910',
+        li1: 'Sábado, 14 de setembro de 2024, às 16:00 PM',
+        li2: 'SMLN MI Trecho 09 NR Córrego TAM, CH Panorama CH 06',
+        li3: 'Espaço Panorama Brasília, Lago Norte, Brasília - DF',
         animation: '1400',
     },
     {
         Simg: sImg3,
         title: 'A Festa',
-        li1: 'Monday, 12 Apr. 2023 1:00 PM – 2:30 PM',
-        li2: '4517 Washington Ave. Manchester, Kentucky 39495',
-        li3: '+1 234-567-8910',
+        li1: 'Sábado, 14 de setembro de 2024, às 16:00 PM',
+        li2: 'SMLN MI Trecho 09 NR Córrego TAM, CH Panorama CH 06',
+        li3: 'Espaço Panorama Brasília, Lago Norte, Brasília - DF',
         animation: '1600',
     },
 
@@ -39,7 +39,7 @@ const EventSection = () => {
     return (
         <section className="wpo-event-section section-padding" id="event">
             <div className="container">
-                <SectionTitle subTitle={'Our Wedding'} MainTitle={'When & Where'} />
+                <SectionTitle subTitle={'Nosso Casamento'} MainTitle={'Local do Matrimônio'} />
                 <div className="wpo-event-wrap">
                     <div className="row">
                         {Events.map((event, eitem) => (

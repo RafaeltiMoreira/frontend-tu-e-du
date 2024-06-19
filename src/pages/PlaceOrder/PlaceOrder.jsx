@@ -30,14 +30,14 @@ const PlaceOrder = () => {
           <p className='title-text-1'>Para facilitar sua transferência e se caso preferir, disponibilizamos três opções para melhor forma de pagamento: QRCode, chave PIX e Mercado Pago.</p>
         </div>
         <div className='align-details'>
-          <div className="infos-code">
+          
             <p className='title-text-2'>QRCode ou chave PIX</p>
             
               <p><b>Nome:</b> <span>Duan Carvalho Soares</span></p>
               <p><b>CPF:</b> <span>•••.232.521-••</span></p>
               <p><b>Banco:</b> <span>077 - Banco Inter S.A.</span></p>
             
-          </div>
+          
         </div>
         <div className="img-code">
           <img className='img-qrcode' src={assets.qrcode} alt="QRcode" />

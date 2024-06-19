@@ -14,7 +14,7 @@ const FooterCouple = ({ footerClass = '' }) => {
       <div className="wpo-upper-footer">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+            {/*<div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
               <div className="widget link-widget">
                 <div className="widget-title">
                   <h3>Links</h3>
@@ -32,7 +32,7 @@ const FooterCouple = ({ footerClass = '' }) => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div>*/}
             <div className="col col-xl-6 col-lg-4 col-md-6 col-sm-12 col-12">
               <div className="widget about-widget">
                 <div className="logo widget-title">
@@ -42,32 +42,25 @@ const FooterCouple = ({ footerClass = '' }) => {
                 <ul>
                   <li>
                     <Link onClick={ClickHandler} to="/">
-                      <i className="ti-facebook"></i>
+                    <ion-icon name="logo-whatsapp"></ion-icon>
                     </Link>
                   </li>
                   <li>
                     <Link onClick={ClickHandler} to="/">
-                      <i className="ti-twitter-alt"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link onClick={ClickHandler} to="/">
-                      <i className="ti-instagram"></i>
+                    <ion-icon name="logo-instagram"></ion-icon>
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <div className="col col-xl-3  col-lg-4 col-md-6 col-sm-12 col-12">
+            <div className="col col-xl-6  col-lg-4 col-md-6 col-sm-12 col-12">
               <div className="widget wpo-service-link-widget">
                 <div className="widget-title">
-                  <h3>Contact </h3>
+                  <h3>Contato</h3>
                 </div>
                 <div className="contact-ft">
                   <p>tuaneeduan@gmail.com</p>
-                  <p>4517 Washington Ave. Manchester,
-                    Kentucky 39495</p>
                 </div>
               </div>
             </div>

@@ -31,6 +31,11 @@
     margin-bottom: 30px;
   }
 
+  .place-order-left .title-text-1 p {
+    line-height: inherit;
+    margin-bottom: inherit;
+  }
+
   .place-order-left .title-text-2 {
     padding: 10px;
     color: #425335;
@@ -50,10 +55,20 @@
   }
 
   .place-order-left .align-details {
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: start;
     justify-content: center;
-    gap: 10px;
+    flex-direction: column;*/
+
+    display: inline-block;
+    text-align: start;
+  }
+
+  .place-order-left .align-details p {
+    font-size: 16px;
+    color: #425335;
+    line-height: inherit;
+    margin-bottom: inherit;
   }
 
   .btnCopiar {
@@ -93,7 +108,7 @@
   .img-code .btnCopiar {
     position: absolute;
     padding: 10px;
-    width: max(16vw, 200px);
+    width: max(18vw, 200px);
     border-radius: 30px;
     font-weight: bold;
     font-size: 18px;
@@ -197,7 +212,8 @@
     }
 
     .img-code .btnCopiar {
-      font-size: 14px;
+      width: max(18vw, 200px);
+      font-size: 13px;
     }
 
     .place-order-right {
