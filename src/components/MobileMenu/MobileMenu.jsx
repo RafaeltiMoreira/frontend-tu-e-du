@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import ListItem from "@mui/material/ListItem";
 import './MobileMenu.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const menus = [
   {
@@ -54,10 +54,22 @@ const menus = [
 const MobileMenu = () => {
   const [openId, setOpenId] = useState(0);
   const [menuActive, setMenuState] = useState(false);
+  const navigate = useNavigate();
 
   const handleLinkClick = (link, id) => {
-    setOpenId(id);
-    setMenuState(false); // Fechar o menu após o clique
+    if (link.startsWith('#')) {
+      
+      const sectionId = link.substring(1);
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (link.startsWith('/')) {
+      
+      setOpenId(id);
+      setMenuState(false); 
+      navigate(link);
+    }
   };
 
   return (
@@ -75,7 +87,11 @@ const MobileMenu = () => {
               key={mn} 
               onClick={() => handleLinkClick(item.link, item.id)}
             >
-              <Link to={item.link}>{item.title}</Link>
+              {item.link.startsWith('#') ? (
+                <a href={item.link}>{item.title}</a>
+              ) : (
+                <Link to={item.link}>{item.title}</Link>
+              )}
             </ListItem>
           ))}
         </ul>
