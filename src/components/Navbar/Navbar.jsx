@@ -1,5 +1,5 @@
 import { useContext, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { assets } from '../../assets/assets';
 import './Navbar.css';
@@ -16,8 +16,12 @@ const Navbar = () => {
     }
     const { getTotalCartAmount, getTotalCartQuantity } = useContext(StoreContext);
 
-    const navigate = useNavigate();
-    const handleClickHome = () => navigate('https://tuaneeduan.com.br');
+    {/*const navigate = useNavigate();
+    const handleClickHome = () => navigate('https://tuaneeduan.com.br');*/}
+
+    const handleClickHome = () => {
+        window.location.href = 'https://tuaneeduan.com.br';
+    };
 
     // Obtendo a quantidade total de itens no carrinho
     const cartItemCount = getTotalCartQuantity();
