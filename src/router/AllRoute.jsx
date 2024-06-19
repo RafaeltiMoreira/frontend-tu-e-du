@@ -18,7 +18,7 @@ const AllRoute = () => {
           <Route path='home' element={<Homepage />} />
 
             {/* Renderizar a rota Home com o Navbar e o Footer */}
-        <Route path='/ecommerce' element={
+        <Route path='https://tuaneeduan.com.br/ecommerce' element={
           <>
             <div className='app'>
               <Navbar />
