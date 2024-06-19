@@ -6,7 +6,7 @@ import './Navbar.css';
 import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = () => {
-    const [menu, setMenu] = useState('home');
+    const [menu, setMenu] = useState('/ecommerce');
     const menuRef = useRef();
     const openMenu = () => {
         menuRef.current.style.right='0';
