@@ -21,7 +21,7 @@ const menus = [
   {
     id: 2,
     title: 'Lista de presentes',
-    link: 'https://tuaneeduan.com.br/ecommerce',
+    link: '/ecommerce',
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const menus = [
   },
   {
     id: 88,
-    title: 'Contact',
+    title: 'Contato',
     link: '#contact',
   }
 ];
@@ -48,16 +48,6 @@ const menus = [
 const MobileMenu = () => {
   const [openId, setOpenId] = useState(0);
   const [menuActive, setMenuState] = useState(false);
-
-  const handleLinkClick = (link, id) => {
-    setOpenId(id);
-    if (link.startsWith('http')) {
-      window.location.href = link;
-    } else {
-      window.location.href = `${window.location.origin}${link}`;
-    }
-    setMenuState(false);
-  };
 
   return (
     <div>
@@ -70,7 +60,10 @@ const MobileMenu = () => {
             <ListItem 
               className={item.id === openId ? 'active' : null} 
               key={mn} 
-              onClick={() => handleLinkClick(item.link, item.id)}
+              onClick={() => {
+                setOpenId(item.id); 
+                setMenuState(false); 
+              }}
             >
               <a href={item.link}>{item.title}</a>
             </ListItem>

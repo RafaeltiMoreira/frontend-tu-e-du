@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 /*import { useState } from 'react'*/
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import MobileMenu from '../MobileMenu/MobileMenu'
 
 
@@ -14,9 +14,6 @@ const Header = ({ hclass = '', topbarNone = false }) => {
   const ClickHandler = () => {
     window.scrollTo(10, 0);
   }
-
-  const navigate = useNavigate();
-    const handleClickShop = () => navigate('https://tuaneeduan.com.br/ecommerce');
 
   return (
 
@@ -52,7 +49,7 @@ const Header = ({ hclass = '', topbarNone = false }) => {
                       <a onClick={ClickHandler} href="#book">Nossas fotos</a>
                     </li>
                     <li className="menu-item-has-children">
-                      <Link onClick={handleClickShop} to="https://tuaneeduan.com.br/ecommerce">Lista de presentes</Link>
+                      <Link onClick={ClickHandler} to="/ecommerce">Lista de presentes</Link>
                     </li>
                     <li><a onClick={ClickHandler} href='#contact'>Contato</a></li>
                   </ul>
