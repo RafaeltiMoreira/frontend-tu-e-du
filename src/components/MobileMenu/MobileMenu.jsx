@@ -57,16 +57,14 @@ const MobileMenu = () => {
   const navigate = useNavigate();
 
   const handleLinkClick = (link, id) => {
+    setOpenId(id);
     if (link.startsWith('#')) {
-      
       const sectionId = link.substring(1);
       const section = document.getElementById(sectionId);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
     } else if (link.startsWith('/')) {
-      
-      setOpenId(id);
       setMenuState(false); 
       navigate(link);
     }
