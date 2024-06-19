@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ListItem from "@mui/material/ListItem";
 import './MobileMenu.css';
+import { Link } from 'react-router-dom';
 
 const menus = [
   {
@@ -9,22 +10,27 @@ const menus = [
     link: '#home',
   },
   {
-    id: 11,
+    id: 2,
+    title: 'Os Noivos',
+    link: '#couple',
+  },
+  {
+    id: 3,
     title: 'Nossa história',
     link: '#story',
   },
   {
-    id: 21,
+    id: 4,
     title: 'Nossas fotos',
     link: '#book',
   },
   {
-    id: 2,
+    id: 5,
     title: 'Lista de presentes',
     link: '/ecommerce',
   },
   {
-    id: 4,
+    id: 6,
     title: 'Portfolio',
     link: '/portfolio-grid',
   },
@@ -34,12 +40,12 @@ const menus = [
     link: '/shop',
   },
   {
-    id: 5,
+    id: 8,
     title: 'Blog',
     link: '/blog',
   },
   {
-    id: 88,
+    id: 9,
     title: 'Contato',
     link: '#contact',
   }
@@ -49,23 +55,27 @@ const MobileMenu = () => {
   const [openId, setOpenId] = useState(0);
   const [menuActive, setMenuState] = useState(false);
 
+  const handleLinkClick = (link, id) => {
+    setOpenId(id);
+    setMenuState(false); // Fechar o menu após o clique
+  };
+
   return (
     <div>
       <div className={`mobileMenu ${menuActive ? "show" : ""}`}>
         <div className="menu-close">
-          <div className="clox" onClick={() => setMenuState(!menuActive)}><i className="ti-close"></i></div>
+          <div className="clox" onClick={() => setMenuState(!menuActive)}>
+            <i className="ti-close"></i>
+          </div>
         </div>
         <ul className="responsivemenu">
           {menus.map((item, mn) => (
             <ListItem 
               className={item.id === openId ? 'active' : null} 
               key={mn} 
-              onClick={() => {
-                setOpenId(item.id); 
-                setMenuState(false); 
-              }}
+              onClick={() => handleLinkClick(item.link, item.id)}
             >
-              <a href={item.link}>{item.title}</a>
+              <Link to={item.link}>{item.title}</Link>
             </ListItem>
           ))}
         </ul>
