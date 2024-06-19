@@ -27,17 +27,6 @@ const AllRoute = () => {
             <Footer />
           </>
         } />
-        
-        {/* Rota Cart com Navbar e Footer 
-        <Route path="/cart" element={
-          <>
-            <div className="app">
-              <NavbarOrder />
-              <Cart />
-            </div>
-            <Footer />
-          </>
-        } /> */}
 
         {/* Rota Cart com Navbar e Footer */}
         <Route path='/order-cart' element={

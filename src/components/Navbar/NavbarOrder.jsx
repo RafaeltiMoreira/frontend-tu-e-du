@@ -17,7 +17,7 @@ const Navbar = () => {
     const { getTotalCartAmount, getTotalCartQuantity } = useContext(StoreContext);
 
     const navigate = useNavigate();
-    const handleClickHome = () => navigate('/');
+    const handleClickHome = () => navigate('/home');
 
     // Obtendo a quantidade total de itens no carrinho
     const cartItemCount = getTotalCartQuantity();
