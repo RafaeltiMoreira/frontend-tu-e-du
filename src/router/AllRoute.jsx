@@ -17,16 +17,8 @@ const AllRoute = () => {
           <Route path='/' element={<Homepage />} />
           <Route path='home' element={<Homepage />} />
 
-            {/* Renderizar a rota Home com o Navbar e o Footer */}
-        <Route path='https://tuaneeduan.com.br/ecommerce' element={
-          <>
-            <div className='app'>
-              <Navbar />
-              <Home />
-            </div>
-            <Footer />
-          </>
-        } />
+          {/* Rota para ecommerce com redirecionamento */}
+        <Route path='/ecommerce' element={<EcommerceRedirect />} />
         
         {/* Rota Cart com Navbar e Footer 
         <Route path="/cart" element={
@@ -64,6 +56,18 @@ const AllRoute = () => {
         </Routes>
       
     </div>
+  );
+}
+
+const EcommerceRedirect = () => {
+  return (
+    <>
+      <div className='app'>
+        <Navbar />
+        <Home />
+      </div>
+      <Footer />
+    </>
   );
 }
 
