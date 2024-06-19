@@ -17,11 +17,7 @@ const Navbar = () => {
     const { getTotalCartAmount, getTotalCartQuantity } = useContext(StoreContext);
 
     const navigate = useNavigate();
-    const handleClickHome = () => navigate('/ecommerce');
-
-    {/*const handleClickHome = () => {
-        window.location.href = 'https://tuaneeduan.com.br';
-    };*/}
+    const handleClickHome = () => navigate('/');
 
     // Obtendo a quantidade total de itens no carrinho
     const cartItemCount = getTotalCartQuantity();
