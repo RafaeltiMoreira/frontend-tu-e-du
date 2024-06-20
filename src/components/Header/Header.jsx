@@ -51,7 +51,12 @@ const Header = ({ hclass = '', topbarNone = false }) => {
                     <li className="menu-item-has-children">
                       <Link onClick={ClickHandler} to="/ecommerce">Lista de presentes</Link>
                     </li>
-                    <li><a onClick={ClickHandler} href='#contact'>Contato</a></li>
+                    <li>
+                      <a onClick={ClickHandler} href='#event'>Local do Matrimônio</a>
+                    </li>
+                    <li>
+                      <a onClick={ClickHandler} href='#contact'>Contato</a>
+                    </li>
                   </ul>
 
                 </div>

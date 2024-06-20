@@ -31,18 +31,8 @@ const menus = [
   },
   {
     id: 6,
-    title: 'Portfolio',
-    link: '/portfolio-grid',
-  },
-  {
-    id: 7,
-    title: 'Shop',
-    link: '/shop',
-  },
-  {
-    id: 8,
-    title: 'Blog',
-    link: '/blog',
+    title: 'Local do Matrimônio',
+    link: '#event',
   },
   {
     id: 9,
