@@ -2697,7 +2697,7 @@ a.ui-button:active, .ui-button:active,
     width: 100%;
   }
   .wpo-site-header .mobail-menu button {
-    background-color: #657150;
+    /*background-color: $theme-primary-color;*/
     width: 40px;
     height: 35px;
     border: 0;
@@ -2711,7 +2711,7 @@ a.ui-button:active, .ui-button:active,
     box-shadow: none;
   }
   .wpo-site-header .mobail-menu button span {
-    background-color: #fff;
+    background-color: #657150;
     width: 20px;
     display: block;
     height: 2px;
@@ -2785,7 +2785,6 @@ a.ui-button:active, .ui-button:active,
     width: 40px;
     height: 40px;
     line-height: 40px;
-    border: 1px solid #fff;
   }
   .wpo-site-header .slideInn {
     left: 0 !important;
@@ -9144,7 +9143,7 @@ a.ui-button:active, .ui-button:active,
   display: block;
   text-align: center;
   color: #657150;
-  font-size: 20px;
+  font-size: 14px;
 }
 .wpo-couple-section-s2 .couple-item-wrap .couple-text-bg .couple-text ul li a:hover {
   color: #657150;
