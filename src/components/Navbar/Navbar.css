@@ -45,7 +45,7 @@
 
 .navbar-shop .active {
   padding-bottom: 2px;
-  border-bottom: 2px solid #425335;
+  border-bottom: 2px solid #fff;
 }
 
 .navbar-shop li {
@@ -171,7 +171,8 @@
     align-items: center;
     top: 0;
     gap: 30px;
-    background: linear-gradient(360deg, rgba(49, 92, 72, 1) 0%, rgba(144, 184, 138, 1) 35%, rgba(200, 233, 200, 1) 100%);;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(101,113,80,1) 0%, rgba(101,113,80,1) 35%, rgba(66,83,53,1) 100%);
     /*background-color: #00000015;*/
     width: 320px;
     height: 100%;
