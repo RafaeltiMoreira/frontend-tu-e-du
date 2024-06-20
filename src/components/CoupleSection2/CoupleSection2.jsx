@@ -28,9 +28,11 @@ const CoupleSection2 = () => {
                                         blandit.</p>
                                     <div className="social">
                                         <ul>
-                                            <li><Link to="/home-2"><i className="ti-facebook"></i></Link></li>
-                                            <li><Link to="/home-2"><i className="ti-twitter-alt"></i></Link></li>
-                                            <li><Link to="/home-2"><i className="ti-instagram"></i></Link></li>
+                                            <li>
+                                                <Link to="https://www.instagram.com/tuane_reis/" title="Tuane Reis">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -53,9 +55,11 @@ const CoupleSection2 = () => {
                                         blandit.</p>
                                     <div className="social">
                                         <ul>
-                                            <li><Link to="/home-2"><i className="ti-facebook"></i></Link></li>
-                                            <li><Link to="/home-2"><i className="ti-twitter-alt"></i></Link></li>
-                                            <li><Link to="/home-2"><i className="ti-instagram"></i></Link></li>
+                                            <li>
+                                                <Link to="https://www.instagram.com/duaancarvalho/" title="Duan Soares">
+                                                    <ion-icon name="logo-instagram"></ion-icon>
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>

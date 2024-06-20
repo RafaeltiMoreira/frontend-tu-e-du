@@ -41,12 +41,12 @@ const FooterCouple = ({ footerClass = '' }) => {
                 <p>Agradecemos a todos os familiares e amigos por fazerem parte da nossa história.</p>
                 <ul>
                   <li>
-                    <Link onClick={ClickHandler} to="/">
-                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <Link onClick={ClickHandler} to="https://www.instagram.com/tuane_reis/" title="Tuane Reis">
+                    <ion-icon name="logo-instagram"></ion-icon>
                     </Link>
                   </li>
                   <li>
-                    <Link onClick={ClickHandler} to="/">
+                    <Link onClick={ClickHandler} to="https://www.instagram.com/duaancarvalho/" title="Duan Soares">
                     <ion-icon name="logo-instagram"></ion-icon>
                     </Link>
                   </li>
