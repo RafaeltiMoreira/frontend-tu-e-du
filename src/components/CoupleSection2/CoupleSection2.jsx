@@ -29,7 +29,7 @@ const CoupleSection2 = () => {
                                     <div className="social">
                                         <ul>
                                             <li>
-                                                <Link to="https://www.instagram.com/tuane_reis/" title="Tuane Reis">
+                                                <Link to="https://www.instagram.com/tuane_reis/" target="_blank" rel="noopener noreferrer" title="Tuane Reis">
                                                     <ion-icon name="logo-instagram"></ion-icon>
                                                 </Link>
                                             </li>
@@ -56,7 +56,7 @@ const CoupleSection2 = () => {
                                     <div className="social">
                                         <ul>
                                             <li>
-                                                <Link to="https://www.instagram.com/duaancarvalho/" title="Duan Soares">
+                                                <Link to="https://www.instagram.com/duaancarvalho/" target="_blank" rel="noopener noreferrer" title="Duan Soares">
                                                     <ion-icon name="logo-instagram"></ion-icon>
                                                 </Link>
                                             </li>
