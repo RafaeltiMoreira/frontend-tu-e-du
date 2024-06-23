@@ -12,9 +12,11 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@mercadopago/sdk-react": "^0.0.19",
     "@mui/material": "^5.15.19",
     "@mui/styled-engine": "^5.15.14",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "axios": "^1.7.2",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-awesome-reveal": "^4.2.11",
@@ -24,6 +26,7 @@
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.5",
     "slick-carousel": "^1.8.1",
+    "uuid": "^10.0.0",
     "yet-another-react-lightbox": "^3.19.0"
   },
   "devDependencies": {

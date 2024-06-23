@@ -236,4 +236,17 @@
       line-height: inherit !important;
       margin-bottom: inherit !important;
     }
+
+    #walletBrick_container button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 20px;
+      min-width: 240px;
+      line-height: 10px
+    }
+
+    #walletBrick_container p {
+      font-size: 14px;
+    }
   }
