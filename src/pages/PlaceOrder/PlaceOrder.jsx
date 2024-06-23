@@ -51,7 +51,7 @@ const PlaceOrder = () => {
         items,
       };
 
-      const response = await fetch("https://tuaneeduan.com.br/ecommerce/order/create_preference", {
+      const response = await fetch("https://tuaneeduan.com.br/order/create_preference", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
