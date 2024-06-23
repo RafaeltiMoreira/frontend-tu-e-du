@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect, useCallback } from 'react';
-//import axios from 'axios';
+import axios from 'axios';
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react';
 import { v4 as uuidv4 } from 'uuid';
 import { StoreContext } from '../../context/StoreContext';
@@ -14,6 +14,7 @@ const PlaceOrder = () => {
   const textoCopiado = "00020126330014BR.GOV.BCB.PIX0111026232521735204000053039865802BR5920Duan Carvalho Soares6008Brasilia62070503***6304855B"
 
   const publicKey = import.meta.env.VITE_REACT_PUBLIC_KEY
+  //const url = import.meta.env.VITE_REACT_URL
 
   console.log('Public Key:', publicKey);
 
@@ -51,23 +52,14 @@ const PlaceOrder = () => {
         items,
       };
 
-      const response = await fetch("https://tuaneeduan.com.br/order/create_preference", {
-        method: "POST",
+      const response = await axios.post("https://tuaneeduan.com.br/order/create_preference", preferenceData, {
         headers: {
           "Content-Type": "application/json",
           "X-Idempotency-Key": idempotencyKey,
-        },
-        body: JSON.stringify(preferenceData)
+        }
       });
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
-      console.log('Response data:', data);
-
-      const { id } = data;
+      const { id } = response.data;
       setPreferenceId(id);
       return id;
 
