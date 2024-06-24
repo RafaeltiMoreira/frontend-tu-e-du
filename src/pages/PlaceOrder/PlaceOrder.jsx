@@ -52,12 +52,16 @@ const PlaceOrder = () => {
         items,
       };
 
-      const response = await axios.post("https://tuaneeduan.com.br/order/create_preference", preferenceData, {
+      const response = await axios.post("https://backend-tu-e-du.vercel.app/order/create_preference", preferenceData, {
         headers: {
           "Content-Type": "application/json",
           "X-Idempotency-Key": idempotencyKey,
         }
       });
+
+      if (!response.data) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       const { id } = response.data;
       setPreferenceId(id);
@@ -139,7 +143,7 @@ const PlaceOrder = () => {
           </div>
           <div onClick={handleAmount}></div>
           <button onClick={handleAmount}>Pagar pelo Mercado Pago</button>
-          {preferenceId && <Wallet initialization={{ preferenceId }} customization={{ texts:{ valueProp: 'smart_option'}}} />}
+          {preferenceId && <Wallet initialization={{ preferenceId }} />}
         </div>
       </div>
     </div>
