@@ -74,6 +74,7 @@ const PlaceOrder = () => {
       if (!response.data) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+      console.log(response)
 
       const { id } = response.data;
       setPreferenceId(id);
