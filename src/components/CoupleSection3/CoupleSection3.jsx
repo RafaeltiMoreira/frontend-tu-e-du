@@ -47,7 +47,7 @@ const CoupleSection3 = () => {
                                     <img src={vector2} alt="" />
                                 </div> */}
                 <h3>Duan Soares</h3>
-                <p>Tímido, educado, protetor, disciplinado, soneca, esquecido e brincalhão. Busca sempre superar seus objetivos. Adora fazer as pessoas sorrirem e tornar a vida dos que estão ao seu redor mais leve. Sempre sonhou em constituir uma família e viver um amor leve, hoje é Grato a Deus por esta vivendo esse sonho.</p>
+                <p>Tímido, educado, protetor, disciplinado, soneca, esquecido e brincalhão. Busca sempre superar seus objetivos. Adora fazer as pessoas sorrirem e tornar a vida dos que estão ao seu redor mais leve. Sempre sonhou em constituir uma família e viver um amor leve, hoje é Grato a Deus por estar vivendo esse sonho.</p>
                 <div className="social">
                   <ul>
                     <Link to="https://www.instagram.com/duaancarvalho/" target="_blank" rel="noopener noreferrer" title="Duan Soares">
