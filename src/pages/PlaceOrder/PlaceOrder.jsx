@@ -64,7 +64,7 @@ const PlaceOrder = () => {
         },
       };
 
-      const response = await axios.post(`${url}/order/create_preference`, preferenceData, {
+      const response = await axios.post(`${url}/create_preference`, preferenceData, {
         headers: {
           "Content-Type": "application/json",
           "X-Idempotency-Key": idempotencyKey,
