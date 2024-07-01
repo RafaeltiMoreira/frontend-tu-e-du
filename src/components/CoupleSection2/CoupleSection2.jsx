@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import coupleImg1 from '../../images/couple/t.png'
 import coupleImg2 from '../../images/couple/d.png'
 import bg from '../../images/couple/image-bg.svg'
+import { images } from '../../images/images'
 
 
 const CoupleSection2 = () => {
@@ -15,7 +15,7 @@ const CoupleSection2 = () => {
                             <div className="couple-item">
                                 <div className="couple-img-wrap">
                                     <div className="couple-img">
-                                        <img src={coupleImg1} alt="" />
+                                        <img src={images.profileT} alt="" />
                                     </div>
                                     <div className="c-shape">
                                         <img src={bg} alt="" />

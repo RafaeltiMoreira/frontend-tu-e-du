@@ -155,7 +155,7 @@
                 float: left;
 
                 a {
-                    color: $theme-primary-color-s2;
+                    color: $theme-primary-color;
                     width: 45px;
                     height: 45px;
                     line-height: 49px;
@@ -167,8 +167,8 @@
                     transition: all .3s;
 
                     &:hover {
-                        background: $theme-primary-color;
-                        color: $white;
+                        background: $white;
+                        color: $theme-primary-couple;
                     }
                 }
             }

@@ -1,12 +1,12 @@
 import { Slide } from "react-awesome-reveal";
-import hero1 from '../../images/slider/banner-tu-e-du.png'
+import hero1 from '../../images/slider/banner-tu-e-du.webp'
 import shape1 from '../../images/slider/shape1.svg'
 import shape2 from '../../images/slider/shape2.svg'
 import shape3 from '../../images/slider/shape3.svg'
 import shape4 from '../../images/slider/shape4.svg'
 import shape5 from '../../images/slider/shape5.svg'
 import shape6 from '../../images/slider/shape6.svg'
-import bgshape from '../../images/slider/bg-shape.png'
+import bgshape from '../../images/slider/bg-shape.webp'
 import TimeCountDown from "../Countdown/Countdown";
 
 

@@ -420,6 +420,7 @@
 					line-height: 30px;
 					color: $text-color;
 					margin-bottom: 0;
+					font-family: "Jost", sans-serif;
 
 					@media(max-width:1399px) {
 						font-size: 18px;
@@ -1376,6 +1377,7 @@
 				font-weight: 400;
 				line-height: normal;
 				color: $white;
+				font-family: "Jost", sans-serif;
 
 				@media(max-width:757px) {
 					font-size: 25px;
@@ -1406,10 +1408,12 @@
 						margin-top: 10px;
 						font-size: 18px;
 						text-transform: capitalize;
+						background: #A5AA9C;
+    					color: white;
 
 						&:hover,
 						&:focus {
-							background: none;
+							/*background: none;*/
 							outline: none;
 							box-shadow: none;
 						}

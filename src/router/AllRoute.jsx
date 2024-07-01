@@ -51,7 +51,6 @@ const AllRoute = () => {
         } />
 
         </Routes>
-      
     </div>
   );
 }

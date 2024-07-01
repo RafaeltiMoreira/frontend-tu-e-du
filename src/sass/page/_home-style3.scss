@@ -360,6 +360,7 @@
 			font-style: normal;
 			font-weight: 400;
 			line-height: 155%;
+			font-family: "Jost", sans-serif;
 
 			@media(max-width:575px) {
 				font-size: 16px;
@@ -421,10 +422,10 @@
 		li a {
 			display: block;
 			text-align: center;
-			color: $theme-primary-color;
+			color: $theme-primary-color !important;
 
 			&:hover {
-				color: $theme-primary-color;
+				color: $theme-primary-couple !important;
 			}
 		}
 	}

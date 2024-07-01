@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import NavbarCouple from '../../components/NavbarCouple/NavbarCouple'
 import Hero2 from '../../components/Hero2/Hero2';
-import CoupleSection2 from '../../components/CoupleSection2/CoupleSection2';
+import CoupleSection3 from '../../components/CoupleSection3/CoupleSection3.jsx';
 import StorySection2 from '../../components/StorySection2/StorySection2';
 import EventSection from '../../components/EventSection/EventSection';
 import FooterCouple from '../../components/FooterCouple/FooterCouple';
@@ -17,7 +17,7 @@ const HomePage = () => {
         <Fragment>
             <NavbarCouple />
             <Hero2 />
-            <CoupleSection2 />
+            <CoupleSection3 />
             <StorySection2 />
             <PortfolioSectionS3 />
             <EventSection/>

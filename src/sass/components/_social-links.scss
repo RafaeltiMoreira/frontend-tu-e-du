@@ -8,7 +8,8 @@
 		margin-right: 1px;
 
 		a {
-			background-color: lighten($theme-primary-color, 10%);
+			// background-color: lighten($theme-primary-color, 10%);
+			background-color: $theme-primary-color;
 			width: 35px;
 			height: 35px;
 			line-height: 35px;
@@ -17,10 +18,18 @@
 			text-align: center;
 
 			&:hover {
-				background-color: $theme-primary-color;
+				background-color: $theme-primary-couple;
 			}
 		}
+
 	}
 
+	.instagram-icon svg {
+		color: $theme-primary-color;
+	}
+
+	.instagram-icon svg:hover {
+		color: $theme-primary-couple;
+	}
 
 }

@@ -156,7 +156,7 @@ export const gift_list = [
         _id: "9",
         name: "Maleta de ferramentas",
         image: "https://utfs.io/f/28d43724-2c90-4be4-8a73-35643fd704a3-hvw346.png",
-        price: 156.90,
+        price: 1.00, //156.90,
         description: "Kit de Ferramentas 129 Peças com Maleta, Sparta.",
         category: "Ferramentas"
     }, {

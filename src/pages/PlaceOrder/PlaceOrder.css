@@ -171,6 +171,47 @@
     font-size: 18px;
   }
 
+  /* Ajuste o botão de envio/pagamento */
+  .place-order-right .cart-total button:hover {
+    background-color: #8b6c1d;
+  }
+
+  /* Estilo para o contêiner dos campos de formulário */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+    color: #425335;
+    font-size: 16px;
+  }
+
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #C59A27;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #425335;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus {
+    border: 1px solid #8b6c1d;
+    border-color: #8b6c1d;
+    /* Cor preta */
+    outline: none;
+    /* Remove o outline padrão do navegador */
+  }
+
+  .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+
   @media (max-width: 1068px) {
     .img-code .btnCopiar {
       font-size: 15px;
@@ -246,7 +287,21 @@
       line-height: 10px
     }
 
+    #walletBrick_container button span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     #walletBrick_container p {
+      font-size: 12px;
+    }
+
+    .form-group input {
+      font-size: 14px;
+    }
+
+    .form-group label {
       font-size: 14px;
     }
   }

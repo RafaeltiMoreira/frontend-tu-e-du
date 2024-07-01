@@ -2543,8 +2543,8 @@
 					}
 
 					&:hover {
-						background: $theme-primary-color;
-						color: $white;
+						background: $theme-primary-color !important;
+						color: $theme-primary-color !important;
 					}
 				}
 			}
