@@ -23,7 +23,7 @@ const PlaceOrder = () => {
 
   const publicKey = import.meta.env.VITE_REACT_PUBLIC_KEY
   const url = import.meta.env.VITE_REACT_URL
-
+  //console.log("API URL:", url);
   //console.log('Public Key:', publicKey);
 
   initMercadoPago(publicKey, {
