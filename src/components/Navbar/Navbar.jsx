@@ -1,9 +1,9 @@
-import { useContext, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { assets } from '../../assets/assets';
 import './Navbar.css';
-import { StoreContext } from '../../context/StoreContext';
+// import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = () => {
     const [menu, setMenu] = useState('/ecommerce');
@@ -14,13 +14,13 @@ const Navbar = () => {
     const closeMenu = () => {
         menuRef.current.style.right='-320px';
     }
-    const { getTotalCartAmount, getTotalCartQuantity } = useContext(StoreContext);
+    // const { getTotalCartAmount, getTotalCartQuantity } = useContext(StoreContext);
 
     const navigate = useNavigate();
     const handleClickHome = () => navigate('/home');
 
     // Obtendo a quantidade total de itens no carrinho
-    const cartItemCount = getTotalCartQuantity();
+    // const cartItemCount = getTotalCartQuantity();
 
     return (
         <div className='navbar-shop'>
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <a href='#contato' onClick={() => setMenu('contato')} className={menu === 'contato' ? 'active' : ''}>Contato</a>
                 <button className='btn-link' onClick={handleClickHome}>Site dos Noivos</button>
             </ul>
-            <div className="navbar-right">
+            {/* <div className="navbar-right">
                 <div className="navbar-search-icon">
                     <Link to="/order-cart"><img src={assets.cart_icon} alt="Ícone da sacola de compras." /></Link>
                     <div className={getTotalCartAmount() === 0 ? "" : "dot"}>
@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
         </div>
     )
 }
