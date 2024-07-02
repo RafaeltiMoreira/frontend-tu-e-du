@@ -64,6 +64,10 @@
   line-height: inherit !important;
 }
 
+.add a:hover {
+  color: white !important;
+}
+
 .btn-cart {
   /*position: absolute;*/
   bottom: 33px;
