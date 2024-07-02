@@ -1,8 +1,8 @@
 import { Slide } from "react-awesome-reveal";
 import SectionTitle from '../SectionTitle/SectionTitle'
-import sImg1 from '../../images/event/1.jpg'
-import sImg2 from '../../images/event/2.jpg'
-import sImg3 from '../../images/event/3.jpg'
+import sImg1 from '../../images/event/cerimonia.webp'
+import sImg2 from '../../images/event/recepcao.webp'
+import sImg3 from '../../images/event/festa.webp'
 import LocationMap from './Modal/LocationMap'
 
 
