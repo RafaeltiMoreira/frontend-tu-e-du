@@ -1,10 +1,10 @@
 import { Routes, Route, } from 'react-router-dom';
 import Homepage from '../pages/HomePage/HomePage';
-import OrderCart from '../pages/OrderCart/OrderCart'
+// import OrderCart from '../pages/OrderCart/OrderCart'
 import Home from '../pages/Home/Home';
-import PlaceOrder from '../pages/PlaceOrder/PlaceOrder';
+// import PlaceOrder from '../pages/PlaceOrder/PlaceOrder';
 import Navbar from '../components/Navbar/Navbar';
-import NavbarOrder from '../components/Navbar/NavbarOrder';
+// import NavbarOrder from '../components/Navbar/NavbarOrder';
 import Footer from '../components/Footer/Footer';
 import './AllRoute.css'
 
@@ -29,7 +29,7 @@ const AllRoute = () => {
         } />
 
         {/* Rota Cart com Navbar e Footer */}
-        <Route path='/order-cart' element={
+        {/* <Route path='/order-cart' element={
           <>
             <div className='app'>
               <NavbarOrder />
@@ -37,10 +37,10 @@ const AllRoute = () => {
             </div>
             <Footer />
           </>
-        } />
+        } /> */}
         
         {/* Rota PlaceOrder com Navbar e Footer */}
-        <Route path='/order' element={
+        {/* <Route path='/order' element={
           <>
             <div className='app'>
               <NavbarOrder />
@@ -48,7 +48,7 @@ const AllRoute = () => {
             </div>
             <Footer />
           </>
-        } />
+        } /> */}
 
         </Routes>
     </div>
