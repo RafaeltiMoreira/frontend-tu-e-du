@@ -106,7 +106,14 @@
   margin-bottom: inherit;
 }
 
-@media (min-width: 1050px) {
+@media (max-width: 1366px) {
+  .list-item-price {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1050px) {
   .list-item-price {
     font-size: 16px;
   }

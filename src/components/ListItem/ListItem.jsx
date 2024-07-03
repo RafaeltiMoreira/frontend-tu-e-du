@@ -133,6 +133,9 @@ const productLinks = {
     url: "https://mpago.la/1WdG8Qe",
     script: "202634584-c5c2f822-327d-462b-b505-bee0dd08b3f9"
   },
+  "33": {
+    url: "http://link.mercadopago.com.br/tuaneeduan"
+  },
 };
 
 const ListItem = ({ id, name, price, description, image }) => {
@@ -150,7 +153,11 @@ const ListItem = ({ id, name, price, description, image }) => {
           <p>{name}</p>
         </div>
         <p className="list-item-desc">{description}</p>
-        <p className="list-item-price">{formatNumber(price)}</p>
+        {price !== undefined ? (
+          <p className="list-item-price">{formatNumber(price)}</p>
+        ) : (
+          <p className="list-item-price">Livre</p>
+        )}
         {
           productLink ? (
             <div>
@@ -158,11 +165,13 @@ const ListItem = ({ id, name, price, description, image }) => {
                 <i className="fa fa-shopping-bag"></i>{" "}
                 <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
               </button>
-              <script 
-                src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                data-preference-id={productLink.script}
-                data-source="button">
-              </script>
+              {productLink.script && (
+                <script 
+                  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                  data-preference-id={productLink.script}
+                  data-source="button">
+                </script>
+              )}
             </div>
           ) : (
             <div className='list-item-counter'>
@@ -178,7 +187,7 @@ const ListItem = ({ id, name, price, description, image }) => {
 ListItem.propTypes = {
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.number,
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
