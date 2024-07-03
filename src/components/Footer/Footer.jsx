@@ -5,6 +5,7 @@ const Footer = () => {
     return (
         <div className='footer' id='contato'>
             <img className='logoFooter' src={assets.logoTd} alt="Imagem logo de nome mercadoted" />
+            <p className='footer-pay'>tuaneeduan@gmail.com</p>
             <p className='footer-pay'>Formas de pagamento:</p>
             <div className="footer-content">
                 <div className="footer-content-left logoIcons">
@@ -24,7 +25,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr />
-            <p className='footer-copyright'>&copy; 2024 - Desenvolvido com carinho por Rafael Moreira - Todos os direitos reservados.</p>
+            <p className='footer-copyright'>&copy; 2024 | Desenvolvido com carinho por Rafael Moreira | Todos os direitos reservados.</p>
         </div>
     )
 }
