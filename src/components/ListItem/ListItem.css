@@ -64,7 +64,31 @@
   line-height: inherit !important;
 }
 
+.add:hover {
+  background-color: #a87d19;
+}
+
 .add a:hover {
+  color: white !important;
+}
+
+.list-item-img-container .out-of-stock {
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
+  cursor: inherit;
+  color: white;
+  font-weight: 500;
+  background-color: #ff4d4d;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-family: "Lexend", sans-serif;
+  font-size: small !important;
+  line-height: inherit !important;
+}
+
+.out-of-stock a:hover {
   color: white !important;
 }
 

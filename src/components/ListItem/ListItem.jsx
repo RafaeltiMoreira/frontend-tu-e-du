@@ -98,8 +98,8 @@ const productLinks = {
     script: "202634584-2a6f77b6-76e9-4883-820d-daeaec05f574"
   },
   "24": {
-    url: "https://mpago.la/18hQGp4",
-    script: "202634584-7407f239-6227-40cc-9bbe-42e52f8a1357"
+    url: "",
+    script: ""
   },
   "25": {
     url: "https://mpago.la/1un5Lg1",
@@ -136,12 +136,18 @@ const productLinks = {
   "33": {
     url: "http://link.mercadopago.com.br/tuaneeduan"
   },
+  "34": {
+    url: "",
+    script: ""
+  },
 };
 
 const ListItem = ({ id, name, price, description, image }) => {
   //const { cartItems } = useContext(StoreContext);  
 
   const productLink = productLinks[id];
+  const isOutOfStock = !productLink.url || !productLink.script;
+  const hasOnlyUrl = productLink.url && !productLink.script;
 
   return (
     <div className='list-item'>
@@ -156,10 +162,21 @@ const ListItem = ({ id, name, price, description, image }) => {
         {price !== undefined ? (
           <p className="list-item-price">{formatNumber(price)}</p>
         ) : (
-          <p className="list-item-price">Livre</p>
+          <p className="list-item-price">R$ Livre</p>
         )}
         {
-          productLink ? (
+          hasOnlyUrl ? (
+            <div>
+              <button className='add list-item-counter'>
+                <i className="fa fa-shopping-bag"></i>{" "}
+                <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
+              </button>
+            </div>
+          ) : isOutOfStock ? (
+            
+              <button className='out-of-stock'>Presenteados</button>
+            
+          ) : (
             <div>
               <button className='add list-item-counter'>
                 <i className="fa fa-shopping-bag"></i>{" "}
@@ -172,10 +189,6 @@ const ListItem = ({ id, name, price, description, image }) => {
                   data-source="button">
                 </script>
               )}
-            </div>
-          ) : (
-            <div className='list-item-counter'>
-              <p>Link de presente indisponível.</p>
             </div>
           )
         }
