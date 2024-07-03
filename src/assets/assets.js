@@ -257,6 +257,14 @@ export const gift_list = [
         category: "Casa&Cozinha"
     },
     {
+        _id: "34",
+        name: "Lava Louça Panasonic",
+        image: "https://utfs.io/f/152dc9c3-480d-4722-b37e-23ba90746b71-khgx51.webp",
+        price: 5099.00,
+        description: "Lava Louça Panasonic 15 Serviços Inox Np-6m2ftkbrp - 220v",
+        category: "Casa&Cozinha"
+    },
+    {
         _id: "21",
         name: "Trilha Capim Açu",
         image: "https://utfs.io/f/70df8a4c-9252-4de1-bcb1-566322680e0c-l3lt0.png",
@@ -283,7 +291,7 @@ export const gift_list = [
     {
         _id: "24",
         name: "Entardecer privativo",
-        image: "https://utfs.io/f/beefb1ae-408f-401a-a4ee-f20e03c9c849-158hpp.png",
+        image: "https://utfs.io/f/34e0f652-a98b-4581-9192-e04df8ef26fc-3cjwzc.webp",
         price: 4490.00,
         description: "Ótima oportunidade de poder aproveitar o maravilhoso entardecer de Noronha.",
         category: "Passeios"
@@ -358,5 +366,5 @@ export const gift_list = [
         image: "https://utfs.io/f/cb807276-e0c7-434f-9b9f-630c0c31225c-pvz3e1.png",
         description: "Valor que o seu coração manda e o bolso obedece.",
         category: "Vale presente"
-    }
+    },
 ]
