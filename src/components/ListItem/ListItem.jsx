@@ -1,16 +1,36 @@
 import PropTypes from 'prop-types';
+import { useContext, useState } from 'react';
 import { formatNumber } from '../../lib/utils';
 import './ListItem.css';
-import { useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
+import Modal from '../Modal/Modal';
 
 
 const ListItem = ({ id, name, price, description, image }) => {
   const { productLinks } = useContext(StoreContext);  
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentLink, setCurrentLink] = useState('');
+  const [currentPlatform, setCurrentPlatform] = useState('');
+  console.log({ id, name, price, image });
   const productLink = productLinks[id];
   const isOutOfStock = !productLink.url || !productLink.script;
   const hasOnlyUrl = productLink.url && !productLink.script;
+
+  const openModal = (url, platform) => {
+    setCurrentLink(url);
+    setCurrentPlatform(platform);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentLink('');
+    setCurrentPlatform('');
+  };
+
+  const proceedToPayment = () => {
+    window.location.href = currentLink;
+  };
 
   return (
     <div className='list-item'>
@@ -33,18 +53,18 @@ const ListItem = ({ id, name, price, description, image }) => {
         )}
         {hasOnlyUrl ? (
           <div>
-            <button className='add list-item-counter'>
+            <button target="_blank" rel="noopener noreferrer" className='add list-item-counter' onClick={() => openModal(productLink.url, 'Mercado Pago')}>
               <i className="fa fa-shopping-bag"></i>{" "}
-              <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
+              Presentear
             </button>
           </div>
         ) : isOutOfStock ? (
           <button className='out-of-stock'>Presenteados</button>
         ) : (
           <div>
-            <button className='add list-item-counter'>
+            <button target="_blank" rel="noopener noreferrer" className='add list-item-counter' onClick={() => openModal(productLink.url, 'Mercado Pago')}>
               <i className="fa fa-shopping-bag"></i>{" "}
-              <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
+              Presentear
             </button>
             {productLink.script && (
               <script
@@ -56,6 +76,16 @@ const ListItem = ({ id, name, price, description, image }) => {
           </div>
         )}
       </div>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        onProceed={proceedToPayment}
+        platform={currentPlatform}
+        id={id}
+        name={name}
+        price={price}
+        image={image}
+      />
     </div>
   )
 }
