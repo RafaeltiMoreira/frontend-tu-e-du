@@ -106,10 +106,66 @@
 
 @media (max-width: 1050px) {
   .modal-content {
-  margin: 30px 20px;
+    margin: 30px 20px;
+  }
+
+  .modal-content h2 {
+    font-size: max(1vw, 18px);
+  }
+
+  .modal-title-text {
+    font-size: 14px;
+  }
+
+  .img-qrcode {
+    max-width: 200px;
   }
 
   .img-code .btnCopiar {
+    padding: 5px 10px;
     font-size: 16px;
+  }
+
+  .modal-text-mp {
+    font-size: 14px !important;
+  }
+
+  .modal-name-text {
+    font-size: 14px !important;
+  }
+
+  .modal-content button {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  .modal-content h2 {
+    font-size: max(1vw, 18px);
+  }
+
+  .modal-title-text {
+    font-size: 14px;
+  }
+
+  .img-qrcode {
+    max-width: 200px;
+  }
+
+  .img-code .btnCopiar {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  .modal-text-mp {
+    font-size: 14px !important;
+  }
+
+  .modal-name-text {
+    font-size: 14px !important;
+  }
+
+  .modal-content button {
+    padding: 5px 10px;
   }
 }
