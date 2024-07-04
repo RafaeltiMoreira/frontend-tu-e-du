@@ -1,0 +1,115 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 450px;
+}
+
+.modal-content button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+}
+
+.modal-btn-next {
+  background-color: #009EE3;
+  color: #fff;
+}
+
+.modal-btn-next:hover {
+  background-color: #008ad6;
+}
+
+.modal-btn-close {
+  border: 1px solid #ff4d4d !important;
+  color: #ff4d4d;
+  background-color: #fff;
+}
+
+.modal-img img {
+  margin-top: 10px;
+  max-width: 80px;
+}
+
+.modal-name-text {
+  font-size: 16px !important;
+  line-height: 1em !important;
+  color: #425335 !important;
+  margin-bottom: 10px !important;
+}
+
+.modal-name-price p, b {
+  font-size: 16px;
+  color: #425335;
+  margin-bottom: 20px !important;
+}
+
+.img-qrcode {
+  max-width: 250px;
+}
+
+.img-code .btnCopiar {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #C59A27;
+  border: 1px solid #C59A27;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.img-code input {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  left: 30%;
+  top: 30%;
+}
+
+.modal-title-text {
+  font-size: 16px;
+  color: #425335;
+  margin-bottom: 10px;
+}
+
+.modal-content h2 {
+  font-size: max(1.5vw, 18px);
+  font-weight: 600;
+  color: #425335;
+  margin-bottom: 20px;
+  font-family: "Lexend", sans-serif;
+}
+
+.modal-text-mp {
+  font-size: 16px !important;
+  color: #425335 !important;
+  line-height: 1em !important;
+}
+
+@media (max-width: 1050px) {
+  .modal-content {
+  margin: 30px 20px;
+  }
+
+  .img-code .btnCopiar {
+    font-size: 16px;
+  }
+}
