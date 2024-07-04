@@ -160,38 +160,38 @@ const ListItem = ({ id, name, price, description, image }) => {
         </div>
         <p className="list-item-desc">{description}</p>
         {price !== undefined ? (
-          <p className="list-item-price">{formatNumber(price)}</p>
+          isOutOfStock ? (
+            <p className="list-item-price"><s>{formatNumber(price)}</s></p>
+          ) : (
+            <p className="list-item-price">{formatNumber(price)}</p>
+          )
         ) : (
           <p className="list-item-price">R$ Livre</p>
         )}
-        {
-          hasOnlyUrl ? (
-            <div>
-              <button className='add list-item-counter'>
-                <i className="fa fa-shopping-bag"></i>{" "}
-                <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
-              </button>
-            </div>
-          ) : isOutOfStock ? (
-            
-              <button className='out-of-stock'>Presenteados</button>
-            
-          ) : (
-            <div>
-              <button className='add list-item-counter'>
-                <i className="fa fa-shopping-bag"></i>{" "}
-                <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
-              </button>
-              {productLink.script && (
-                <script 
-                  src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
-                  data-preference-id={productLink.script}
-                  data-source="button">
-                </script>
-              )}
-            </div>
-          )
-        }
+        {hasOnlyUrl ? (
+          <div>
+            <button className='add list-item-counter'>
+              <i className="fa fa-shopping-bag"></i>{" "}
+              <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
+            </button>
+          </div>
+        ) : isOutOfStock ? (
+          <button className='out-of-stock'>Presenteados</button>
+        ) : (
+          <div>
+            <button className='add list-item-counter'>
+              <i className="fa fa-shopping-bag"></i>{" "}
+              <a href={productLink.url} target="_blank" rel="noopener noreferrer">Presentear</a>
+            </button>
+            {productLink.script && (
+              <script
+                src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                data-preference-id={productLink.script}
+                data-source="button">
+              </script>
+            )}
+          </div>
+        )}
       </div>
     </div>
   )
