@@ -78,7 +78,7 @@ const Storys = [
         shape: shape2,
         title: 'O Começo de uma Nova Jornada',
         date: 'Ano de 2024',
-        description: 'E agora, em 2024, diante de Deus e de todos aqueles que amamos, nos tornamos marido e mulher. É o começo de uma nova jornada, cheia de promessas e sonhos compartilhados, prontos para enfrentar o que o futuro nos reserva, juntos, como um verdadeiro casal feito para estar lado a lado.',
+        description: 'E agora, em 2024, diante de Deus e de todos aqueles que amamos, nos tornaremos marido e mulher. Será o começo de uma nova jornada, cheia de promessas e sonhos compartilhados, prontos para enfrentar o que o futuro nos reserva, juntos, como um verdadeiro casal feito para estar lado a lado.',
         order2: 'order-lg-2 order-1',
         order1: 'order-lg-1 order-2',
     },
