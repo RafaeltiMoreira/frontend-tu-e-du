@@ -40,7 +40,7 @@ const Modal = ({ isOpen, onClose, onProceed, platform, id, name, price, image })
         <div className='modal-img' key={id}>
           <img className='list-item-image-cart' src={image} alt="Imagem do produto escolhido" />
           <p className='modal-name-text'>{name}</p>
-          <p className='modal-name-price'><b>{formatNumber(price)}</b></p>
+          <p className='modal-name-price'><b>{price !== undefined ? formatNumber(price) : "R$ Livre"}</b></p>
         </div>
         <p className='modal-text-mp'>Ao clicar em prosseguir você será redirecionado (a) para o aplicativo do {platform}</p>
         <div className="modal-buttons">
@@ -59,7 +59,7 @@ Modal.propTypes = {
   platform: PropTypes.string.isRequired,
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
   name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  price: PropTypes.number,
   image: PropTypes.string.isRequired,
 };
 
