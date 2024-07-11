@@ -16,10 +16,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const handleClickHome = () => {
         navigate('/home');
-    }   
-
-    // Obtendo a quantidade total de itens no carrinho
-    // const cartItemCount = getTotalCartQuantity();
+    } 
 
     return (
         <div className='navbar-shop'>
