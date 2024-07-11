@@ -5,7 +5,7 @@ const HeaderShop = () => {
   useEffect(() => {
     const handleScrollToHeader = (e) => {
       const targetId = e.target.getAttribute('href');
-      if (targetId === '#header') {
+      if (targetId === '#header-shop') {
         e.preventDefault();
         const headerElement = document.querySelector(targetId);
         const offset = 60; // Ajuste este valor conforme necessário
@@ -21,7 +21,7 @@ const HeaderShop = () => {
       }
     };
 
-    const menuLinks = document.querySelectorAll('a[href="#header"]');
+    const menuLinks = document.querySelectorAll('a[href="#header-shop"]');
     menuLinks.forEach(link => {
       link.addEventListener('click', handleScrollToHeader);
     });
@@ -34,7 +34,7 @@ const HeaderShop = () => {
   }, []);
 
   return (
-    <div id='header'>
+    <div id='header-shop'>
       <div className='header-menu'></div>
       <div className='header'>
         <div className='header-contents'>
