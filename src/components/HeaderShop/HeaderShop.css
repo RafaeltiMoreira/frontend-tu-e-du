@@ -1,16 +1,10 @@
 .header {
     height: 34vw;
-    /*height: 45vw;*/
     margin: 30px auto 150px;
-    /*margin: 30px auto;*/
     background: url('/tuedu.webp') no-repeat;
     background-size: cover;
     position: relative;
     border-radius: 20px;
-}
-
-.header-flex {
-
 }
 
 .header-contents {
@@ -21,15 +15,11 @@
     gap: 1.5vw;
     max-width: 50%;
     bottom: 20%;
-    /*left: 6vw;*/
     animation: fadeIn 3s;
 }
 
 .header-contents .header-h2 {
     font-weight: 500;
-    /*color: white;*/
-    /*color: #49557e;*/
-    /*color: #425335;*/
     color: #C59A27;
     font-size: max(4.5vw, 22px);
     font-family: "Lexend", sans-serif;
@@ -42,7 +32,6 @@
 
 .header-contents a {
     border: none;
-    /*color: #747474;*/
     color: white;
     font-weight: 500;
     padding: 1vw 2.3vw;
@@ -52,6 +41,11 @@
 }
 
 @media (max-width: 1050px) {
+    #header {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
     .header {
         margin: 30px auto;
     }
@@ -70,7 +64,8 @@
 
     .header-contents .header-h2 {
         font-size: max(4.5vw, 18px);
-        max-width: 85%;
+        max-width: 100%;
+        margin: 0;
     }
 
     .header-contents p {
@@ -79,5 +74,6 @@
 
     .header-contents a {
         padding: 2vw 4vw;
+        text-align: center;
     }
 }
