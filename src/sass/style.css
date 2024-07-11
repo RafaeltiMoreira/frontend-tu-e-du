@@ -2829,7 +2829,7 @@ a.ui-button:active, .ui-button:active,
 .wpo-site-header .navbar-header .navbar-brand img {
   max-width: 170px;
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .wpo-site-header .navbar-collapse.collapse {
     display: none;
   }

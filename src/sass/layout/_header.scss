@@ -1166,7 +1166,7 @@
 
 
 	/* style for navigation less than 992px */
-	@include media-query (991px) {
+	@include media-query (992px) {
 		.container {
 			width: 100%;
 		}
@@ -1326,7 +1326,7 @@
 
 
 	/*navbar collaps less then 992px*/
-	@include media-query (991px) {
+	@include media-query (992px) {
 		.navbar-collapse.collapse {
 			display: none;
 		}
