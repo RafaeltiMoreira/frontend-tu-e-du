@@ -63,7 +63,7 @@
     }
 
     .header-contents .header-h2 {
-        font-size: max(4.5vw, 18px);
+        font-size: max(5vw, 18px);
         max-width: 100%;
         margin: 0;
     }
