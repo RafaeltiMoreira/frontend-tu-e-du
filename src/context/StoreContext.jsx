@@ -66,12 +66,12 @@ const StoreContextProvider = (props) => {
             script: "202634584-e31e5f19-7bf2-4bec-83a7-0e83bf52942c"
         },
         "15": {
-            url: "https://mpago.la/1UBjoJn",
-            script: "202634584-9fc81a34-1d25-4c89-8f16-66b97df1fc06"
+            url: "",
+            script: ""
         },
         "16": {
-            url: "https://mpago.la/2NyeEXX",
-            script: "202634584-580c8221-2206-464e-9823-c98b1c697d8e"
+            url: "",
+            script: ""
         },
         "17": {
             url: "https://mpago.la/2dnTr3y",
@@ -106,8 +106,8 @@ const StoreContextProvider = (props) => {
             script: ""
         },
         "25": {
-            url: "https://mpago.la/1un5Lg1",
-            script: "202634584-bea9dbda-9397-46fe-9f6a-cb34cfa59237"
+            url: "",
+            script: ""
         },
         "26": {
             url: "https://mpago.la/2c96yeF",

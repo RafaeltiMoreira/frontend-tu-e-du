@@ -11,7 +11,7 @@ const ListItem = ({ id, name, price, description, image }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentLink, setCurrentLink] = useState('');
   const [currentPlatform, setCurrentPlatform] = useState('');
-  console.log({ id, name, price, image });
+  // console.log({ id, name, price, image });
   const productLink = productLinks[id];
   const isOutOfStock = !productLink.url || !productLink.script;
   const hasOnlyUrl = productLink.url && !productLink.script;

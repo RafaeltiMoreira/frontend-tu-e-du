@@ -211,7 +211,7 @@ export const gift_list = [
     {
         _id: "15",
         name: "Roupão de Banho Rosê",
-        image: "https://utfs.io/f/42699983-a928-4341-89cf-cdfaec0d6d1c-yqel.png",
+        image: "https://utfs.io/f/d5fab6f7-ef5a-432a-8a3f-f48650831b11-stjl19.webp",
         price: 120.00,
         description: "Roupão de Banho Rosê Kacyumara Vintage Microfibra (M).",
         category: "Banho"
@@ -219,7 +219,7 @@ export const gift_list = [
     {
         _id: "16",
         name: "Roupão de Banho Chumbo",
-        image: "https://utfs.io/f/d2f71595-65fa-47c8-9f62-7668e3466ae8-yqes.png",
+        image: "https://utfs.io/f/60042d22-799a-42a1-82b7-40c9a9265fd4-a972d4.webp",
         price: 120.00,
         description: "Roupão de Banho Chumbo Andreza Microfibra Tress (G) Manga Longa.",
         category: "Banho"
@@ -299,7 +299,7 @@ export const gift_list = [
     {
         _id: "25",
         name: "Chaleira Elétrica",
-        image: "https://utfs.io/f/e0374712-010c-44eb-af15-33b41fc24f9c-19f.png",
+        image: "https://utfs.io/f/98e7c93f-8713-4894-bfbd-41c9d4e76bae-d9n72i.webp",
         price: 80.00,
         description: "Chaleira Elétrica Efficient Electrolux com Capacidade de 1,8L.",
         category: "Utensílios"
