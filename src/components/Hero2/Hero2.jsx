@@ -33,6 +33,7 @@ const Hero2 = () => {
                                     <div className="slide-text">
                                         <Slide direction="up" duration="1400" triggerOnce="true">
                                             <p>Sábado, 14 de setembro de 2024 às 16h.</p>
+                                            <p>Traje: passeio completo.</p>
                                         </Slide>
                                     </div>
                                     <div className="wpo-wedding-date">

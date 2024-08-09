@@ -11,6 +11,7 @@ const Events = [
         Simg: sImg1,
         title: 'A Cerimônia',
         li1: 'Sábado, 14 de setembro de 2024, às 16:00 PM',
+        li4: 'Traje: passeio completo.',
         li2: 'SMLN MI Trecho 09 NR Córrego TAM, CH Panorama CH 06',
         li3: 'Espaço Panorama Brasília, Lago Norte, Brasília - DF',
         animation: '1200',
@@ -19,6 +20,7 @@ const Events = [
         Simg: sImg2,
         title: 'A Recepção',
         li1: 'Sábado, 14 de setembro de 2024, às 16:00 PM',
+        li4: 'Traje: passeio completo.',
         li2: 'SMLN MI Trecho 09 NR Córrego TAM, CH Panorama CH 06',
         li3: 'Espaço Panorama Brasília, Lago Norte, Brasília - DF',
         animation: '1400',
@@ -27,6 +29,7 @@ const Events = [
         Simg: sImg3,
         title: 'A Festa',
         li1: 'Sábado, 14 de setembro de 2024, às 16:00 PM',
+        li4: 'Traje: passeio completo.',
         li2: 'SMLN MI Trecho 09 NR Córrego TAM, CH Panorama CH 06',
         li3: 'Espaço Panorama Brasília, Lago Norte, Brasília - DF',
         animation: '1600',
@@ -57,6 +60,7 @@ const EventSection = () => {
                                             </div>
                                             <ul>
                                                 <li>{event.li1}</li>
+                                                <li>{event.li4}</li>
                                                 <li>{event.li2}</li>
                                                 <li>{event.li3}</li>
                                                 <li><LocationMap
