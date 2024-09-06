@@ -99,7 +99,7 @@ export const gift_list = [
     {
         _id: "1",
         name: "Jogo de lençol palha",
-        image: "https://utfs.io/f/166519ce-c6cf-47be-9615-0f7199b81d96-82b8qa.png",
+        image: "https://utfs.io/f/5b5db228-24c2-42ba-b52f-6177b671b3ec-tala10.webp",
         price: 239.99,
         description: "Jogo de dençol, cama Box King Size 4 peças percal 600 fios toque macio, cor palha.",
         category: "Enxoval"
@@ -107,7 +107,7 @@ export const gift_list = [
     {
         _id: "2",
         name: "Jogo de lençol estampado",
-        image: "https://utfs.io/f/849a5206-8aca-487d-842c-bf7d3eaf3c9c-hvtog7.png",
+        image: "https://utfs.io/f/38fe4f43-b79d-41bc-83fe-d665c854052d-imyuu6.webp",
         price: 220.00,
         description: "Jogo de lençol King 4 peças 400 fios 100% algodão, super macio estampado (floral roxo).",
         category: "Enxoval"
@@ -131,7 +131,7 @@ export const gift_list = [
     {
         _id: "5",
         name: "Geladeira Brastemp",
-        image: "https://utfs.io/f/3b1d9882-f866-45d0-b23e-037f28bc53b0-qprdmk.png",
+        image: "https://utfs.io/f/2e3b4281-d3bd-4483-9758-4b2d9391f98c-60lchg.webp",
         price: 2821.73,
         description: "Geladeira Brastemp Frost Free Duplex 386 litros com Altura Flex cor Inox.",
         category: "Eletrodomésticos"
@@ -163,7 +163,7 @@ export const gift_list = [
     {
         _id: "9",
         name: "Maleta de ferramentas",
-        image: "https://utfs.io/f/28d43724-2c90-4be4-8a73-35643fd704a3-hvw346.png",
+        image: "https://utfs.io/f/f23c2bef-c127-4f5e-ba05-2e8c9ce8d71f-scy8mn.webp",
         price: 156.90,
         description: "Kit de Ferramentas 129 Peças com Maleta, Sparta.",
         category: "Ferramentas"
@@ -227,7 +227,7 @@ export const gift_list = [
     {
         _id: "17",
         name: "Smart TV 43",
-        image: "https://utfs.io/f/e85d4172-24fd-40e8-a2b3-f66f5de1e04c-2v6.png",
+        image: "https://utfs.io/f/320715ea-0422-4c75-9523-396f192573a7-gv5tpq.webp",
         price: 1899.05,
         description: "Smart TV 43” 4K Ultra HD LED LG, Wi-Fi Bluetooth Alexa 3 HDMI.",
         category: "Casa&Cozinha"
@@ -243,7 +243,7 @@ export const gift_list = [
     {
         _id: "19",
         name: "Aspirador de Pó Vertical",
-        image: "https://utfs.io/f/5dafb0eb-d234-41d7-99e9-f26f289c4feb-3yxbwm.png",
+        image: "https://utfs.io/f/0bff7e01-8092-424d-ab77-0ae54d90788c-wwljn.webp",
         price: 197.91,
         description: "Aspirador de Pó Vertical e Portátil WAP HIGH SPEED BLACK 1300W 2 em 1.",
         category: "Casa&Cozinha"
@@ -283,7 +283,7 @@ export const gift_list = [
     {
         _id: "23",
         name: "Mergulho batismo",
-        image: "https://utfs.io/f/c885af2b-7611-42b0-bd53-221db0a55b7d-8aek0l.png",
+        image: "https://utfs.io/f/76fbedd5-3841-469d-8d4a-56f50caa11bb-78e58l.webp",
         price: 980.00,
         description: "Mergulho no parque nacional de Fernando de Noronha.",
         category: "Passeios"
@@ -315,7 +315,7 @@ export const gift_list = [
     {
         _id: "27",
         name: "Jogo de facas",
-        image: "https://utfs.io/f/04717ee6-f49e-463f-8d9a-06d353030e33-19e.png",
+        image: "https://utfs.io/f/6ebe8ad6-1591-4a4d-9f1d-146a5aeb80cd-ct307r.webp",
         price: 228.00,
         description: "Jogo de facas 06 peças, Tramontina Polywood.",
         category: "Utensílios"

@@ -10,12 +10,12 @@ const StoreContextProvider = (props) => {
 
     const productLinks = {
         "1": {
-            url: "https://mpago.li/2pPUW6T",
-            script: "202634584-122c2ed7-78be-44d2-a0aa-0dee9741062a"
+            url: "",
+            script: ""
         },
         "2": {
-            url: "https://mpago.la/1EqNFg2",
-            script: "202634584-fbd3789f-9e90-4826-9045-f7390eb4023e"
+            url: "",
+            script: ""
         },
         "3": {
             url: "https://mpago.la/22tcHR6",
@@ -26,8 +26,8 @@ const StoreContextProvider = (props) => {
             script: "202634584-504e18ac-8650-4741-a056-099ddaeb4768"
         },
         "5": {
-            url: "https://mpago.la/1mTZsgy",
-            script: "202634584-50391b6f-c48f-4cab-be7b-233dc020b7d3"
+            url: "",
+            script: ""
         },
         "6": {
             url: "https://mpago.la/21F3NZX",
@@ -42,8 +42,8 @@ const StoreContextProvider = (props) => {
             script: "202634584-ef6a4ed1-3cc3-4fc6-8773-41c43566ac28"
         },
         "9": {
-            url: "https://mpago.la/1Fe1iyE",
-            script: "202634584-faa47713-f9cf-4410-aeb6-75c461507b7d"
+            url: "",
+            script: ""
         },
         "10": {
             url: "https://mpago.la/2zeUifr",
@@ -74,16 +74,16 @@ const StoreContextProvider = (props) => {
             script: ""
         },
         "17": {
-            url: "https://mpago.la/2dnTr3y",
-            script: "202634584-dce33099-2860-42fe-8eb2-8488aba1e069"
+            url: "",
+            script: ""
         },
         "18": {
             url: "https://mpago.la/1hPP73T",
             script: "202634584-657d635d-8834-499f-8525-5d7ff5aff774"
         },
         "19": {
-            url: "https://mpago.la/165qw55",
-            script: "202634584-44d0a8c2-7a6c-4dfc-a840-2d09284bbdbe"
+            url: "",
+            script: ""
         },
         "20": {
             url: "https://mpago.la/1kTSvJP",
@@ -98,8 +98,8 @@ const StoreContextProvider = (props) => {
             script: "202634584-845bb4c8-2c40-47ba-9c1b-73b348c08ca9"
         },
         "23": {
-            url: "https://mpago.la/1U1HYnG",
-            script: "202634584-2a6f77b6-76e9-4883-820d-daeaec05f574"
+            url: "",
+            script: ""
         },
         "24": {
             url: "",
@@ -114,8 +114,8 @@ const StoreContextProvider = (props) => {
             script: "202634584-566a6915-c20a-46c3-b661-88315eabac5e"
         },
         "27": {
-            url: "https://mpago.la/2YMarpk",
-            script: "202634584-8e974748-5acd-4a5e-9cac-9597994b1d19"
+            url: "",
+            script: ""
         },
         "28": {
             url: "https://mpago.la/2fjVnS3",
