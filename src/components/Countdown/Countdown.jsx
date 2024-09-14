@@ -26,7 +26,7 @@ const Countdown = () => {
 
         // Se a hora já passou de 01:45, mostra "Parabéns aos casados!"
         if (hoursNow > 16 || (hoursNow === 16 && minutesNow >= 0)) {
-          setMessage('Que esta nova fase seja cheia de amor e união!');
+          setMessage('Que Deus abençoe sempre a nossa união!');
         } else {
           // Se for o dia, mas ainda não chegou 01:45
           setMessage('O grande dia abençoado do nosso matrimônio chegou!');
