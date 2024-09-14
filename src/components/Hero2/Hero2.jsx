@@ -9,8 +9,6 @@ import shape6 from '../../images/slider/shape6.svg'
 import bgshape from '../../images/slider/bg-shape.webp'
 import TimeCountDown from "../Countdown/Countdown";
 
-
-
 const Hero2 = () => {
     return (
         <section className="static-hero">
